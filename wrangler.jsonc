@@ -1,0 +1,12 @@
+{
+  "name": "itprior-gym-assistant",
+  "main": "gym-worker.js",
+  "compatibility_date": "2026-11-16",
+  "workers_dev": true,
+  "ai": {"binding": "AI"},
+  "ratelimits": [
+    {"name":"CHAT_LIMITER","namespace_id":"73101","simple":{"limit":6,"period":60}},
+    {"name":"GLOBAL_LIMITER","namespace_id":"73102","simple":{"limit":30,"period":60}}
+  ],
+  "observability": {"enabled":false}
+}
