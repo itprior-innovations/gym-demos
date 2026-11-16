@@ -215,26 +215,20 @@
         <div class="row g-3">
           <div class="col-sm-6">
             <label>Height:</label>
-            <select id="bmiFt" class="bmi-sel"><option value="">Feet</option><option>4</option><option selected>5</option><option>6</option></select>
-          </div>
-          <div class="col-sm-6">
-            <label>&nbsp;</label>
-            <select id="bmiIn" class="bmi-sel"><option value="">Inc</option><option>2</option><option selected>6</option><option>10</option></select>
-          </div>
-          <div class="col-sm-6">
-            <select id="bmiCm" class="bmi-sel"><option value="">Cms</option><option selected>yes</option></select>
+            <select id="bmiFt" class="bmi-sel"><option value="">Feet</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select>
+            <select id="bmiIn" class="bmi-sel"><option value="">Inc</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select>
+            <select id="bmiCm" class="bmi-sel"><option value="">Cms</option><option>140</option><option>150</option><option>160</option><option>170</option><option>180</option><option>190</option><option>200</option></select>
           </div>
           <div class="col-sm-6">
             <label>Weight:</label>
-            <select id="bmiKg" class="bmi-sel"><option value="">Kilograms</option><option>60</option><option selected>70</option><option>80</option><option>90</option></select>
-          </div>
-          <div class="col-12">
+            <select id="bmiType" class="bmi-sel"><option value="">Type</option><option value="kg">Kilograms</option><option value="lb">Pounds</option></select>
+            <select id="bmiKg" class="bmi-sel"><option value="">Kilograms</option><option>40</option><option>50</option><option>60</option><option>70</option><option>80</option><option>90</option><option>100</option><option>110</option><option>120</option></select>
             <button type="submit" class="btnx btn-b"><span>Calculate</span></button>
             <p id="bmiRes"></p>
           </div>
         </div>
       </form>
-      <div class="bmi-kettle"><img data-i="kettle" alt="Kettlebells"></div>
+      <div class="bmi-kettle in-panel"><img data-i="kettle" alt="Kettlebells"></div>
     </div>
     <div class="bmi-right">
       <div class="bmi-tbl rv">
@@ -242,12 +236,12 @@
         <div class="br"><span>Below 10.2</span><span>Severe Thinness</span></div>
         <div class="br"><span>10.0 - 20.5</span><span>Moderate Thinness</span></div>
         <div class="br"><span>20.5 - 26.2</span><span>Mild Thinness</span></div>
-        <div class="br"><span>26.2 - 30.0</span><span>Normal</span></div>
         <div class="br"><span>40.0 - and Above</span><span>Obese</span></div>
       </div>
       <p class="bmi-note rv">This BMI Calculator Is For Informational Purposes Only.</p>
     </div>
   </div>
+  <div class="bmi-kettle abs"><img data-i="kettle" alt=""></div>
 </section>
 
 <!-- ================= TRAINERS ================= -->
@@ -435,7 +429,7 @@
         <p class="f-text">Sign up to our newsletter to get the latest news and offers.</p>
         <form class="f-sub" onsubmit="return false">
           <input type="email" placeholder="Enter email" required>
-          <button class="btnx btn-b w-100" type="submit"><span>Get Notified</span></button>
+          <button class="btnx btn-b" type="submit"><span>Get Notified</span></button>
         </form>
       </div>
       <div class="col-md-6 col-lg-3">
