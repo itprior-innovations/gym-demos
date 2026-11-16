@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FitZone Gym - Fitness Club &amp; Personal Training</title>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="hdr">
+ <div class="logo"><span><svg width="34" height="30" viewBox="0 0 24 22"><path d="M12 21S2 14 2 7.5A5 5 0 0 1 12 5a5 5 0 0 1 10 2.5C22 14 12 21 12 21z" fill="none" stroke="#1a46c8" stroke-width="2.4"/><path d="M1 11h5l2-3 3 6 2-3h10" fill="none" stroke="#1a46c8" stroke-width="2"/></svg>FITZONE</span></div>
+ <div class="hr">
+  <div class="top"><span>&#9993; hello@fitzone.example</span><span>&#9742; +91 00000 00000</span><span class="sp"></span><a href="#">Login</a>|<a href="#">Register</a></div>
+  <nav><button class="burger" onclick="document.body.classList.toggle('nav')">&#9776;</button>
+   <ul><li class="act"><a href="#">Home</a></li><li><a href="#classes">Classes</a></li><li><a href="#trainers">Trainers</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#blog">Blog</a></li><li><a href="#bmi">BMI</a></li></ul>
+   <a class="btn y sk" href="#pricing"><span>Membership</span></a></nav>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="hero-in"><h1>Be Fit,<span>Live More</span></h1><a class="btn y sk" href="#pricing"><span>Join us</span></a></div>
+ <div class="hero-img" style="background-image:url(img_hero.jpg)"></div>
+ <i class="dot"></i>
+</section>
+
+<section class="pad center">
+ <p class="eyebrow"><b></b>Why choose us?</p><h2>Our Key Features See Some</h2>
+ <div class="feat" id="feat">
+  <div class="fc"><img data-i="f1" alt=""><h4>Get in the groove</h4><p>Use a past defeat as a motivator. Remind yourself you have nowhere to go except up as you have already been at the bottom.</p></div>
+  <div class="fc"><img data-i="f2" alt=""><h4>It's More Than a Game</h4><p>Success isn't really that difficult. A big part of getting fit is simply showing up and keeping at it, one session at a time.</p></div>
+  <div class="fc"><img data-i="f3" alt=""><h4>Get fit don't quit</h4><p>For those who are serious about having more, doing more and being more, success is achievable with some understanding and discipline.</p></div>
+  <div class="fc"><img data-i="f4" alt=""><h4>Work your butt off</h4><p>For those who are serious about having more, doing more and being more, success is achievable with some understanding and discipline.</p></div>
+ </div>
+ <div class="arrows"><button class="btn b sk" onclick="sc(-1)"><span>&#8249;</span></button><button class="btn b sk" onclick="sc(1)"><span>&#8250;</span></button></div>
+</section>
+
+<section class="about">
+ <div class="about-img" style="background-image:url(img_about.jpg)"></div>
+ <div class="about-tx"><p class="eyebrow"><b></b>About our gym</p><h2>Who We Are And What We Do</h2>
+  <p class="mut">The first thing to remember about success is that it is a process - nothing more, nothing less. There is really no magic to it and it's not reserved only for a select few people.</p>
+  <div class="ab-list">
+   <div class="on"><i>&#127947;</i>Modern Equipment</div><div><i>&#127941;</i>Coaches Champions</div>
+   <div><i>&#128207;</i>Spacious Workout Area</div><div><i>&#127359;</i>Parking Available</div>
+   <div><i>&#128703;</i>Steam &amp; Shower Rooms</div><div><i>&#129380;</i>Bar With Sports Nutrition</div>
+  </div>
+  <p class="ital">There are basically six key areas to higher achievement. Some people will tell you there are four while others may tell you there are eight.</p>
+ </div>
+</section>
+
+<section class="tt" id="classes" style="background-image:linear-gradient(#000a,#000a),url(img_bg1.jpg)">
+ <div class="wrap center"><p class="eyebrow y"><b></b>Class list by goals</p><h2 class="w">What Is Timetable For Classes</h2>
+  <div class="tabs" id="tabs"></div>
+  <div class="tbl"><div class="tr th"><span>Time</span><span>Class Type</span><span>Coach Name</span></div><div id="rows"></div></div>
+ </div>
+</section>
+
+<section class="bmi" id="bmi">
+ <div class="bmi-l"><p class="eyebrow"><b></b>Calculate BMI</p><h2>What Is BMI?</h2>
+  <form id="bf" onsubmit="return calc()"><div class="g"><div><label>Height (cm):</label><input id="h" type="number" min="100" max="250" placeholder="e.g. 170" required></div>
+  <div><label>Weight (kg):</label><input id="w" type="number" min="20" max="300" placeholder="e.g. 68" required></div></div>
+  <button class="btn b sk"><span>Calculate</span></button><p id="res"></p></form></div>
+ <div class="bmi-r"><div class="tbl2"><div class="r hd"><span>BMI range - kg/m2</span><span>Weight Status</span></div>
+  <div class="r"><span>Below 18.5</span><span>Underweight</span></div><div class="r"><span>18.5 - 24.9</span><span>Normal</span></div><div class="r"><span>25.0 - 29.9</span><span>Overweight</span></div><div class="r"><span>30.0 and above</span><span>Obese</span></div></div>
+  <p class="bn">This BMI calculator is for informational purposes only.</p></div>
+</section>
+
+<section class="pad" id="trainers"><div class="wrap"><p class="eyebrow"><b></b>Train with experts</p><h2>Meet The Magnificent Trainers</h2></div>
+ <div class="trs">
+  <div class="tr1"><img data-i="t1" alt=""><div><h5>Rahul Verma<small>Manager</small></h5><i class="btn b sk"><span>&#10150;</span></i></div></div>
+  <div class="tr1"><img data-i="t2" alt=""><div><h5>Priya Nair<small>Dance Teacher</small></h5><i class="btn b sk"><span>&#10150;</span></i></div></div>
+  <div class="tr1"><img data-i="t3" alt=""><div><h5>Anita Rao<small>Trainer</small></h5><i class="btn b sk"><span>&#10150;</span></i></div></div>
+  <div class="tr1"><img data-i="t4" alt=""><div><h5>Karthik Reddy<small>Strength Coach</small></h5><i class="btn b sk"><span>&#10150;</span></i></div></div>
+  <div class="tr1"><img data-i="t5" alt=""><div><h5>Meera Das<small>Yoga Trainer</small></h5><i class="btn b sk"><span>&#10150;</span></i></div></div>
+  <div class="tr1"><img data-i="t6" alt=""><div><h5>Vikram Rao<small>Cardio Coach</small></h5><i class="btn b sk"><span>&#10150;</span></i></div></div>
+ </div></section>
+
+<section class="pad lt center" id="pricing"><div class="wrap"><p class="eyebrow"><b></b>Train our pricing</p><h2>A Plan For Every Price</h2>
+ <div class="plans">
+  <div class="pl"><h6>STANDARD</h6><p>Positive, goal-oriented training that fits a starter budget.</p><div class="pr">&#8377;999<small>/mo</small></div>
+   <ul><li class="o">Cardio</li><li class="x">Swimming Pool</li><li class="x">Gym</li><li class="x">Group Lessons</li><li class="o">Aerobics</li><li class="o">Crossfit</li></ul><a class="btn sk" href="#"><span>Become a member</span></a></div>
+  <div class="pl"><h6>PREMIUM</h6><p>Make a list of your achievements toward your long-term goal.</p><div class="pr bl">&#8377;1,999<small>/mo</small></div>
+   <ul><li class="o">Cardio</li><li class="x">Swimming Pool</li><li class="o">Gym</li><li class="x">Group Lessons</li><li class="o">Aerobics</li><li class="o">Crossfit</li></ul><a class="btn b sk" href="#"><span>Become a member</span></a></div>
+  <div class="pl"><h6>PLATINUM</h6><p>Use a past defeat as a motivator. Remind yourself you can do it.</p><div class="pr">&#8377;3,499<small>/mo</small></div>
+   <ul><li class="o">Cardio</li><li class="o">Swimming Pool</li><li class="o">Gym</li><li class="o">Group Lessons</li><li class="o">Aerobics</li><li class="o">Crossfit</li></ul><a class="btn sk" href="#"><span>Become a member</span></a></div>
+ </div></div></section>
+
+<section class="tm" style="background-image:linear-gradient(#000c,#000c),url(img_bg2.jpg)"><div class="wrap center">
+ <div class="q" id="q"></div><div class="arrows lr"><button class="btn b sk" onclick="tq(-1)"><span>&#8249;</span></button><button class="btn b sk" onclick="tq(1)"><span>&#8250;</span></button></div></div></section>
+
+<section class="pad center" id="blog"><div class="wrap"><p class="eyebrow"><b></b>Our blogs</p><h2>Check Out Our Latest Stories</h2>
+ <div class="blogs">
+  <article><img data-i="b1" alt=""><small>Classes &amp; Coaches</small><h4>Full Body Home Workout</h4><p>Do it today. Remind yourself of someone you know who started late and the fact...</p><div class="meta sk">by Admin / March 10 / 02</div></article>
+  <article><img data-i="b2" alt=""><small>Classes &amp; Coaches</small><h4>31-Day Fitness Calendar</h4><p>Let success motivate you. Find a picture of what epitomizes success to you...</p><div class="meta sk">by Admin / April 03 / 03</div></article>
+  <article><img data-i="b3" alt=""><small>Classes &amp; Coaches</small><h4>At Home Ab Workout</h4><p>Reflect and experiment until you find the right combination of motivators for...</p><div class="meta sk">by Admin / May 26 / 01</div></article>
+ </div></div></section>
+
+<section class="cta"><div class="cta-in"><img data-i="cta" alt=""><div><h2>Fitness Classes This Winter. <span>Get Upto 20% Discount On Your Membership</span></h2><p>What drives me? The thing that drives me most is the desire to find my limits and extend them.</p><a class="btn y sk" href="#pricing"><span>Become a member</span></a></div></div></section>
+
+<footer><div class="wrap">&copy; 2026 FitZone Gym. Demo page. Photos are AI-generated illustrations; names and prices are placeholders.</div></footer>
+<script src="imgs.js"></script>
+<script src="main.js"></script>
+</body></html>
