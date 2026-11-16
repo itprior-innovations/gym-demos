@@ -84,9 +84,12 @@ document.getElementById('bmiForm').addEventListener('submit', function(ev){
   ev.preventDefault();
   var ft=parseFloat(document.getElementById('bmiFt').value)||0,
       inc=parseFloat(document.getElementById('bmiIn').value)||0,
+      cm=parseFloat(document.getElementById('bmiCm').value)||0,
+      type=document.getElementById('bmiType').value||'kg',
       kg=parseFloat(document.getElementById('bmiKg').value)||0;
-  if(!kg || (!ft && !inc)) { document.getElementById('bmiRes').textContent='Please pick height and weight.'; return; }
-  var m=(ft*12+inc)*0.0254, b=kg/(m*m);
+  if(type==='lb') kg=kg*0.453592;
+  if(!kg || (!ft && !inc && !cm)) { document.getElementById('bmiRes').textContent='Please pick height and weight.'; return; }
+  var m=cm? cm/100 : (ft*12+inc)*0.0254, b=kg/(m*m);
   var s=b<18.5?'Underweight':b<25?'Normal':b<30?'Overweight':'Obese';
   document.getElementById('bmiRes').textContent='Your BMI: '+b.toFixed(1)+' ('+s+')';
 });
