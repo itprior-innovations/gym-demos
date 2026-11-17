@@ -78,7 +78,7 @@ h1,h2,h3,h4,h5,h6{font-weight:700;color:var(--dark);margin:0 0 15px}
 
 /* ---------- hero ---------- */
 .banner-home .banner{background-size:cover;background-position:center;position:relative;overflow:hidden}
-.banner-overlay{position:absolute;inset:0;background:rgba(25,71,193,.82)}
+.banner-overlay{position:absolute;inset:0;background:rgba(25,71,193,.5)}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:690px;position:relative;z-index:2}
 .banner-title{color:#fff;text-transform:uppercase;font-size:76px;line-height:1.05;font-weight:700;margin:0}
 .stroke-y{display:block;color:transparent;-webkit-text-stroke:2px var(--y)}
@@ -127,7 +127,7 @@ h1,h2,h3,h4,h5,h6{font-weight:700;color:var(--dark);margin:0 0 15px}
 
 /* ---------- timetable ---------- */
 .tt-sec{position:relative;background-size:cover;background-position:center;padding:90px 0}
-.tt-overlay{position:absolute;inset:0;background:rgba(10,10,12,.72)}
+.tt-overlay{position:absolute;inset:0;background:rgba(10,10,12,.55)}
 .tt-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:34px;flex-wrap:wrap}
 .tt-tabs button{transform:skewX(var(--sk));background:var(--b);color:#fff;border:0;padding:13px 0;
   width:158px;font-weight:600;font-size:15px;text-transform:capitalize;cursor:pointer;transition:background .3s,color .3s;font-family:inherit}
